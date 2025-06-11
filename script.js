@@ -1,53 +1,18 @@
 // script.js
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("form");
 
-// Toggle mobile navigation menu
-const menuToggle = document.getElementById('mobile-menu');
-const nav = document.querySelector('nav ul');
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = form.querySelector("input[type='text']").value;
+    const email = form.querySelector("input[type='email']").value;
+    const message = form.querySelector("textarea").value;
 
-menuToggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+    if (name && email && message) {
+      alert("Thank you for contacting Jay Graphics! We'll get back to you soon.");
+      form.reset();
+    } else {
+      alert("Please fill out all fields before submitting.");
+    }
+  });
 });
-
-// Smooth scroll for navigation links
-document.querySelectorAll('nav ul li a').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const section = document.querySelector(this.getAttribute('href'));
-        section.scrollIntoView({ behavior: 'smooth' });
-
-        // Close mobile menu after selection
-        nav.classList.remove('active');
-    });
-});
-
-// Contact form handling
-const contactForm = document.getElementById('contact-form');
-
-if (contactForm) {
-    contactForm.addEventListener('submit', async function (e) {
-        e.preventDefault();
-
-        const formData = new FormData(this);
-
-        try {
-            // Replace this URL with your own backend or Formspree endpoint
-            const response = await fetch('https://formspree.io/f/your-form-id', {
-                method: 'POST',
-                headers: {
-                    'Accept': 'application/json'
-                },
-                body: formData
-            });
-
-            if (response.ok) {
-                alert('Message sent successfully!');
-                this.reset();
-            } else {
-                alert('There was a problem sending your message.');
-            }
-        } catch (error) {
-            console.error('Error:', error);
-            alert('Failed to send the message.');
-        }
-    });
-}

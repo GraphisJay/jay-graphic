@@ -4,102 +4,82 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Graphic Designer Portfolio</title>
+  <title>Jay Graphics - Graphic Design Studio</title>
   <link rel="stylesheet" href="style.css" />
   <script defer src="script.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <div class="container">
-      <h1 class="logo">Jay Graphics</h1>
-      <nav id="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Portfolio</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="menu-toggle" id="mobile-menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </div>
-    </div>
+  <header class="header">
+    <div class="logo">Jay<span>Graphics</span></div>
+    <nav class="nav">
+
+      <ul>
+        <img src="jay graphics logo.jpeg" alt="Company Logo" style="height:70px;">
+
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+      </ul>
+    </nav>
   </header>
 
-  <section id="home" class="hero-section">
-    <div class="hero-content">
-      <h2>Hello, I'm James from Jay Graphics</h2>
-      <p>Creative Graphic Designer & Visual Storyteller</p>
-      <a href="#work" class="btn">View My Work</a>
-    </div>
+  <section class="hero">
+    <h1>where ideas are made visual</h1>
+    <p>Your brand deserves to be unforgettable. Let us design the difference.</p>
+    <a href="#contact" class="cta-button">Get a Quote</a>
   </section>
 
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>I’m a passionate graphic designer with a lot of experience in creating compelling branding, web design, and print media. I transform ideas into visuals that speak for themselves.</p>
-    </div>
+  <section id="about" class="about">
+    <h2>About Jay Graphics</h2>
+    <p>We are a team of creative professionals dedicated to delivering impactful visual solutions. From logos to full brand identities, we bring ideas to life through design.</p>
   </section>
 
-  <section id="work" class="section">
-    <div class="container">
-      <h2>Portfolio</h2>
-      <div class="work-gallery">
-        <div class="work-item">
-          <img src="images/project1.jpg" alt="Brand Identity">
-          <p>Brand Identity</p>
-        </div>
-        <div class="work-item">
-          <img src="images/project2.jpg" alt="Website Design">
-          <p>Responsive Web Design</p>
-        </div>
-        <div class="work-item">
-          <img src="images/project3.jpg" alt="Mobile App UI">
-          <p>Mobile App UI</p>
-        </div>
+  <section id="services" class="services">
+    <h2>Our Services</h2>
+    <div class="service-list">
+      <div class="service">
+        <h3>Logo Design</h3>
+        <p>Unique, scalable logos that represent your brand’s identity.</p>
+      </div>
+      <div class="service">
+        <h3>Branding</h3>
+        <p>Complete branding packages to make your business stand out.</p>
+      </div>
+      <div class="service">
+        <h3>Marketing Materials</h3>
+        <p>Designs for brochures, business cards, and promotional items.</p>
       </div>
     </div>
   </section>
 
-  <section id="testimonials" class="section">
-    <div class="container">
-      <h2>Testimonials</h2>
-      <blockquote>
-        "Jay Graphics  exceeded our expectations in every way. Their designs are stunning and effective."
-        <cite>- Peter Muigai Startup Founder</cite>
-      </blockquote>
-      <blockquote>
-        "Professional, creative, and responsive. Jay Graphics was a pleasure to work with."
-        <cite>- Emily Wambua Marketing Director</cite>
-      </blockquote>
+  <section id="portfolio" class="portfolio">
+    <h2>Our Portfolio</h2>
+    <div class="portfolio-grid">
+      <img src="jay graphics logo.jpeg" alt="Project 1">
+      <img src="card.jpg" alt="Project 2">
+      <img src="empower graduation.png" alt="Project 3">
     </div>
   </section>
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <form id="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send</button>
-      </form>
-    </div>
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
   </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 Jay Graphics. All rights reserved.</p>
-    </div>
+    <p>&copy; 2025 Jay Graphics. All rights reserved.</p>
   </footer>
 </body>
 
 </html>
 <link rel="stylesheet" href="style.css" />
 <script defer src="script.js"></script>
-
